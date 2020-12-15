@@ -18,7 +18,7 @@ module uart_rx_tb();
 	
 	
 	
-	// Instantiate unit under test (counter)
+	// Instantiate unit under test  
 	uart_rx uart_rx1 (.clk(clk),.rx(rx),.rx_input_data(din),.rx_state(rx_state),.nRST(nRST));
 
 	// Process to create clock signal
