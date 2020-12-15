@@ -1,0 +1,15 @@
+
+State Machine - |uart_rx|rx_state
+Name rx_state.STOP_ST rx_state.D7_ST rx_state.D6_ST rx_state.D5_ST rx_state.D4_ST rx_state.D3_ST rx_state.D2_ST rx_state.D1_ST rx_state.D0_ST rx_state.START_MID rx_state.START_ST rx_state.0000 
+rx_state.0000 0 0 0 0 0 0 0 0 0 0 0 0 
+rx_state.START_ST 0 0 0 0 0 0 0 0 0 0 1 1 
+rx_state.START_MID 0 0 0 0 0 0 0 0 0 1 0 1 
+rx_state.D0_ST 0 0 0 0 0 0 0 0 1 0 0 1 
+rx_state.D1_ST 0 0 0 0 0 0 0 1 0 0 0 1 
+rx_state.D2_ST 0 0 0 0 0 0 1 0 0 0 0 1 
+rx_state.D3_ST 0 0 0 0 0 1 0 0 0 0 0 1 
+rx_state.D4_ST 0 0 0 0 1 0 0 0 0 0 0 1 
+rx_state.D5_ST 0 0 0 1 0 0 0 0 0 0 0 1 
+rx_state.D6_ST 0 0 1 0 0 0 0 0 0 0 0 1 
+rx_state.D7_ST 0 1 0 0 0 0 0 0 0 0 0 1 
+rx_state.STOP_ST 1 0 0 0 0 0 0 0 0 0 0 1 

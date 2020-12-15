@@ -1,0 +1,38 @@
+|uart_rx
+clk => rx_idx[0].CLK
+clk => rx_idx[1].CLK
+clk => rx_idx[2].CLK
+clk => clk_count[0].CLK
+clk => clk_count[1].CLK
+clk => clk_count[2].CLK
+clk => clk_count[3].CLK
+clk => clk_count[4].CLK
+clk => clk_count[5].CLK
+clk => clk_count[6].CLK
+clk => clk_count[7].CLK
+clk => clk_count[8].CLK
+clk => rx~reg0.CLK
+clk => rx_state[0]~reg0.CLK
+clk => rx_state[1]~reg0.CLK
+nRST => rx_state.OUTPUTSELECT
+nRST => rx_state.OUTPUTSELECT
+nRST => rx~reg0.ENA
+nRST => clk_count[8].ENA
+nRST => clk_count[7].ENA
+nRST => clk_count[6].ENA
+nRST => clk_count[5].ENA
+nRST => clk_count[4].ENA
+nRST => clk_count[3].ENA
+nRST => clk_count[2].ENA
+nRST => clk_count[1].ENA
+nRST => clk_count[0].ENA
+nRST => rx_idx[2].ENA
+nRST => rx_idx[1].ENA
+nRST => rx_idx[0].ENA
+rx_input_data => Mux0.IN5
+rx_input_data => Mux11.IN0
+rx_state[0] <= rx_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_state[1] <= rx_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx <= rx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
